@@ -449,10 +449,16 @@ li { list-style: none;}
     padding-inline: 10px;
 }
 
-.contacte .sectiune .contacte-img, .mapa, .formular-sectiune, .contacte-link-box {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding-inline: 20px;
+.contacte .sectiune .mapa, .formular-sectiune, .contacte-link-box {
+    margin-bottom: 25px;
+    padding-inline: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacte .sectiune .contacte-img{
+    margin-bottom: 25px;
+    padding-inline: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -462,10 +468,6 @@ li { list-style: none;}
     color: inherit;
 }
 
-.contacte-img {
-    margin-top: 20px;
-    margin-bottom: 70px;
-}
 
 .contacte-img .logo-ul {
     margin-bottom: 10px;
