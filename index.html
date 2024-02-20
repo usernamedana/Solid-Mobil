@@ -9,6 +9,7 @@
     <script type="text/javascript" src="script/script.js"></script>
     <script type="text/javascript" src="script/carosel.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href='http://www.solidimobil.com/favicon.ico' rel='icon' type='image/x-icon'/>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -67,6 +68,32 @@
             <p class="sectiune-subtitlu">Oferte</p>
             <h2 class="h2 sectiune-titlu">Recomandări</h2>
 
+            <div class="pop-up-js">
+                <button class="exit-js" onclick="popUp(0)">&#x2718;</button>
+                <div class="pop-up-photos">
+                    <img class="pop-up-img-1" src="" alt="1">
+                    <img class="pop-up-img-2" src="" alt="2">
+                    <img class="pop-up-img-3" src="" alt="3">
+                    <img class="pop-up-img-4" src="" alt="4">
+                    <img class="pop-up-img-5" src="" alt="5">
+                    <img class="pop-up-img-6" src="" alt="6">
+                    <img class="pop-up-img-7" src="" alt="7">
+                    <img class="pop-up-img-8" src="" alt="8">
+                    <img class="pop-up-img-9" src="" alt="9">
+                    <img class="pop-up-img-10" src="" alt="10">
+                </div>
+                <div class="pop-up-bottom">
+                    <div class="pop-up-bottom-left">
+                        <p class="main-txt-js"></p>
+                        <p class="date-js"></p>
+                    </div>
+                    <div class="pop-up-bottom-right">
+                        <p class="price-js"></p>
+                        <p class="adresa-js"></p>
+                        <button onclick="popUp(0); scrollFunction('contacte')" class="pop-up-contact-js">Contact</button>
+                    </div>
+                </div>
+            </div>
             <ul class="oferte-lista">
 
                 <p><i class="arrow left" onclick="goLeft()"></i></p>
@@ -76,7 +103,7 @@
 
                             <figure class="oferte-img">
 
-                                <a href="#">
+                                <a onclick="popUp(1)">
                                     <img src="imagini/imagehouse.jpg" alt="Casa Noua">
                                 </a>
 
@@ -89,7 +116,7 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a href="#">Casă de locuit or. Leova</a>
+                                    <a onclick="popUp(1)">Casă de locuit or. Leova</a>
                                 </h3>
 
                                 <p class="oferte-text">
@@ -120,7 +147,7 @@
 
                             <figure class="oferte-img">
 
-                                <a href="#">
+                                <a onclick="popUp(2)">
                                     <img src="imagini/imagehouse.jpg" alt="Casa Noua">
                                 </a>
 
@@ -133,12 +160,11 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a href="#">Casa/Teren</a>
+                                    <a onclick="popUp(2)">Magazin/cafenea</a>
                                 </h3>
 
                                 <p class="oferte-text">
-                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
-                                    iubitorii...
+                                    Ofertă specială pentru cei care doresc să investească în comerț!!! 
                                 </p>
 
                                 <ul class="oferte-lista">
@@ -168,8 +194,8 @@
 
                             <figure class="oferte-img">
 
-                                <a href="#">
-                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                <a onclick="popUp(3)">
+                                    <img src="popupimagini/img.3.0.jpg" alt="Casa Noua">
                                 </a>
 
                             </figure>
@@ -177,16 +203,15 @@
                             <div class="oferte-continut">
 
                                 <div class="oferte-pret">
-                                    <strong>Preț</strong>
+                                    <strong>Preț: 10 000$</strong>
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a href="#">Casa/Teren</a>
+                                    <a onclick="popUp(3)">Teren pentru construcții</a>
                                 </h3>
 
                                 <p class="oferte-text">
-                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
-                                    iubitorii...
+                                    De vînzare teren pentru construcții, cu iesire la drumul național care duce la Vama Leova-Bumbăta.
                                 </p>
 
                                 <ul class="oferte-lista">
@@ -196,11 +221,11 @@
                                     </li>
 
                                     <li class="oferte-info">
-                                        <span><strong>2</strong> Detalii</span>
+                                        <span><strong> str.</strong> Cîmpiilor</span>
                                     </li>
 
                                     <li class="oferte-info">
-                                        <span><strong>3</strong> Detalii</span>
+                                        <span><strong> 0,0950 </strong> Ha</span>
                                     </li>
 
                                 </ul>
@@ -216,8 +241,8 @@
 
                             <figure class="oferte-img">
 
-                                <a href="#">
-                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                <a onclick="popUp(4)">
+                                    <img src="popupimagini/img4.0.JPG" alt="Casa Noua">
                                 </a>
 
                             </figure>
@@ -229,12 +254,11 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a href="#">Casa/Teren</a>
+                                    <a onclick="popUp(4)">casă de locuit</a>
                                 </h3>
 
                                 <p class="oferte-text">
-                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
-                                    iubitorii...
+                                    De vînzare Casă de locuit cu 1 nivel, amenajat cu viță de vie și alte utilități. 
                                 </p>
 
                                 <ul class="oferte-lista">
@@ -248,7 +272,7 @@
                                     </li>
 
                                     <li class="oferte-info">
-                                        <span><strong>3</strong> Detalii</span>
+                                        <span><strong>0,1700</strong>Ha</span>
                                     </li>
 
                                 </ul>
@@ -264,7 +288,7 @@
 
                             <figure class="oferte-img">
 
-                                <a href="#">
+                                <a onclick="popUp(5)">
                                     <img src="imagini/imagehouse.jpg" alt="Casa Noua">
                                 </a>
 
@@ -277,7 +301,7 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a href="#">Casa/Teren</a>
+                                    <a onclick="popUp(5)">Casa/Teren</a>
                                 </h3>
 
                                 <p class="oferte-text">
@@ -312,7 +336,7 @@
 
                             <figure class="oferte-img">
 
-                                <a href="#">
+                                <a onclick="popUp(6)">
                                     <img src="imagini/imagehouse.jpg" alt="Casa Noua">
                                 </a>
 
@@ -325,7 +349,7 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a href="#">Casa/Teren</a>
+                                    <a onclick="popUp(6)">Casa/Teren</a>
                                 </h3>
 
                                 <p class="oferte-text">
@@ -354,6 +378,675 @@
                         </div>
 
                     </li>
+
+                    <li class="elemente" id="elem-7">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(7)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(7)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-8">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(8)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(8)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-9">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(9)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(9)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-10">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(10)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(10)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-11">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(11)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>$20,000</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(11)">Casă de locuit or. Leova</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Casa este amplasată în apropiere de vama Leova-Bumbăta, o zonă liniștită și plăcută
+                                    pentru toți cei care iubesc natura.
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span>str. <strong>Podul de Flori</strong></span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>0,1291</strong> Ha</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-12">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(12)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(12)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-13">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(13)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(13)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-14">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(14)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(14)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-15">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(15)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(15)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-16">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(16)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(16)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-17">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(17)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(17)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-18">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(18)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(18)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-19">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(19)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(19)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="elemente" id="elem-20">
+                        <div class="oferte-opt">
+
+                            <figure class="oferte-img">
+
+                                <a onclick="popUp(20)">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
+                                </a>
+
+                            </figure>
+
+                            <div class="oferte-continut">
+
+                                <div class="oferte-pret">
+                                    <strong>Preț</strong>
+                                </div>
+
+                                <h3 class="h3 oferte-titlu">
+                                    <a onclick="popUp(20)">Casa/Teren</a>
+                                </h3>
+
+                                <p class="oferte-text">
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
+                                </p>
+
+                                <ul class="oferte-lista">
+
+                                    <li class="oferte-info">
+                                        <span><strong>1</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>2</strong> Detalii</span>
+                                    </li>
+
+                                    <li class="oferte-info">
+                                        <span><strong>3</strong> Detalii</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
                 </div>
                 <p><i class="arrow right" onclick="goRight()"></i></p>
 
@@ -479,7 +1172,7 @@
                     <p class="opt-text">Vă putem ajuta să vă realizați visul de a avea o casă nouă</p>
                 </div>
 
-                <button class="buton apel-la-actiune-buton" onclick="scrollFunction()">
+                <button class="buton apel-la-actiune-buton" onclick="scrollFunction('oferte')">
                     <span>Explorează ofertele</span>
                     <i class='bx bx-right-arrow-alt'></i>
                 </button>
@@ -552,18 +1245,20 @@
             </div>
 
             <div class="formular-sectiune">
-                <form id="formular">
+                <form id="formular" action="https://formsubmit.co/emmaverabsv.2018@gmail.com" method="POST">
                     <h3>Lăsați-ne un mesaj</h3>
-                    <input type="text" id="nume" placeholder="Nume" required="">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- <input type="hidden" name="_subject" value="Solid Imobil!"> -->
+                    <input type="hidden" name="_next" value="http://www.solidimobil.com">
+                    <input type="text" name="_subject" id="nume" placeholder="Nume" required>
                     <br>
-                    <input type="text" id="email" placeholder="Email" required="">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                     <br>
-                    <textarea id="mesaj" rows="4" placeholder="Mesaj" required=""></textarea>
+                    <textarea  id="mesaj" name="message" rows="4" placeholder="Mesaj" required></textarea>
                     <br>
-                    <input onclick="send()" type="button" id="transmite" value="Transmite">
+                    <input style="cursor: pointer;" type="submit" id="transmite" value="Transmite">
                 </form>
             </div>
-
             <div class="contacte-link-box">
 
                 <ul class="detalii-lista">
