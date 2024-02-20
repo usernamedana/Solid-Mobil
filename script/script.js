@@ -21,7 +21,7 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare Casă de locuit pe str. Podul de Flori cu teren aferent 0,1291 ha, acces la toate rețelele inginerești. Drumul de acces pietriș. Casa este amplasată în apropiere de vama Leova-Bumbăta, un loc cu vedere către lunca prutului, o zonă liniștită și plăcută pentru toți cei care iubesc natura.";
-      document.querySelector(".date-js").innerHTML = "17.02.2024";
+      document.querySelector(".date-js").innerHTML = "23 august 2023";
       document.querySelector(".price-js").innerHTML = "Price: 20000$";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
@@ -42,7 +42,7 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "Ofertă specială pentru cei care doresc să investească în comerț!!! Avem spre vînzare sau arendă un magazin comercial cu toate condițiile și utilități conectate, este o activitate comercială înregistrată ca SRL, care la fel face parte din ofertă. Facilități: conectate rețelele edilitare, apă, electricitate!, amplasate în centrul orașului Iargara, actele pentru activitatea comercială sunt înregistrate oficial!";
-      document.querySelector(".date-js").innerHTML = "17.02.2024";
+      document.querySelector(".date-js").innerHTML = "2 august 2023";
       document.querySelector(".price-js").innerHTML = "SUPER OFERTĂ!!! ";
       document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 3) {
@@ -62,7 +62,7 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare teren pentru construcții cu suprafața de 0,0950 ha în or. Leova, amplasat pe str. Cîmpiilor, cu iesire la drumul național care duce la Vama Leova-Bumbăta. Este acces la rețele edilitare, apă, gaz și electricitate. Cu un cumpărător real prețul se mai discută.";
-      document.querySelector(".date-js").innerHTML = "17.02.2024";
+      document.querySelector(".date-js").innerHTML = " 7 iulie 2023";
       document.querySelector(".price-js").innerHTML = "Preț: 10 000$";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Cîmpiilor";
     } else if (oferta == 4) {
@@ -82,7 +82,7 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare teren aferent Casei de locuit, cu suprafața de 0,1500 ha, este amplasat pe strada Unirii în apropiere de Centrul Multifuncțional.Casa de locuit este conectată la gaz, apă, electricitate. ";
-      document.querySelector(".date-js").innerHTML = "17.02.2024";
+      document.querySelector(".date-js").innerHTML = " 28 aprilie 2023";
       document.querySelector(".price-js").innerHTML = "Preț : 20 500$";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Unirii";
     } else if (oferta == 5) {
@@ -102,7 +102,7 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare Casă de locuit cu 1 nivel, cu teren aferent 0,1700 ha, amenajat cu viță de vie și alte utilități.";
-      document.querySelector(".date-js").innerHTML = "17.02.2024";
+      document.querySelector(".date-js").innerHTML = " 3 aprilie 2023";
       document.querySelector(".price-js").innerHTML = "Preț: 10 500$";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
@@ -123,7 +123,7 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare Casă de locuit cu două nivele, zona centru, cu teren aferent 0,06 ha, amenajat cu viță de vie, seră, și alte utilități, rețelele inginerești sunt conectate. Casa de locuit este dotată cu: Cazangerie cu Cazan nou, podea caldă etaj 1 și etaj 2, sistemul de încălzire este dotat si cu radiatoare, electricitatea conectată după standarde, panou de siguranțe pentru fiecare etaj, garaj cu uși rulante, beci cu gîrlici.";
-      document.querySelector(".date-js").innerHTML = "17.02.2024";
+      document.querySelector(".date-js").innerHTML = " 9 martie 2023";
       document.querySelector(".price-js").innerHTML = "Preț: 75 000$";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: ";
