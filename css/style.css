@@ -290,6 +290,7 @@ li { list-style: none;}
     display: block;
     padding-inline: 20px;
     align-items: center;
+    position: relative;
 }
 
 .oferte-opt {
@@ -322,6 +323,7 @@ li { list-style: none;}
     position: relative;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .oferte-opt .oferte-img img {
@@ -364,6 +366,7 @@ li { list-style: none;}
 .oferte-opt .oferte-titlu {
     --font-weight: 700;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .oferte-opt .oferte-titlu>a:is(:hover, :focus) {
@@ -412,6 +415,102 @@ li { list-style: none;}
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
+
+
+/*Pop-up*/
+.pop-up-js{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: rgba(128, 128, 128, 0.9);
+    top: 0;
+    left: 15%;
+    z-index: 1000;
+    padding: 1% 0;
+    border-radius: 2vh;
+}
+.exit-js {
+    position: absolute;
+    font-size: 30px;
+    right: 1.5vh;
+    top: 1.5vh;
+    transition: 0.5s;
+    padding: 0 1vh;
+    background-color: white;
+    border-radius: 4vh;
+}
+.exit-js:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+.pop-up-photos {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    height: 19vh;
+    width: 90%;
+}
+.pop-up-photos img{
+    width: 15%;
+    height: auto;
+    border-radius: 2vh;
+}
+.pop-up-bottom {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: white;
+}
+.pop-up-bottom-left {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 3vh 0;
+    padding-left: 5vh;
+    text-align: left;
+    position: relative;
+}
+.main-txt-js {
+    font-size: 28px;
+}
+.date-js {
+    font-size: 24px;
+    text-align: left;
+}
+.pop-up-bottom-right {
+    padding-left: 5vh;
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: baseline;
+    width: 48%;
+    gap: 1%;
+}
+.price-js {
+    font-size: 38px;
+}
+.adresa-js {
+    font-size: 30px;
+}
+.pop-up-contact-js {
+    font-size: 20px;
+    padding: 1vh 2vh;
+    background-color: white;
+    color: black;
+    border-radius: 2vh;
+    transition: 0.5s;
+}
+.pop-up-contact-js:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+}
+
+
 
 
    /* SERVICII */
