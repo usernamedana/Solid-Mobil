@@ -125,8 +125,7 @@ function popUp(oferta) {
         "De vînzare Casă de locuit cu două nivele, zona centru, cu teren aferent 0,06 ha, amenajat cu viță de vie, seră, și alte utilități, rețelele inginerești sunt conectate. Casa de locuit este dotată cu: Cazangerie cu Cazan nou, podea caldă etaj 1 și etaj 2, sistemul de încălzire este dotat si cu radiatoare, electricitatea conectată după standarde, panou de siguranțe pentru fiecare etaj, garaj cu uși rulante, beci cu gîrlici.";
       document.querySelector(".date-js").innerHTML = " 9 martie 2023";
       document.querySelector(".price-js").innerHTML = "Preț: 75 000$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: ";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 7) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
@@ -146,8 +145,7 @@ function popUp(oferta) {
         "De vînzare teren pentru construcții cu suprafața de 0,06 ha, amplasat într-o zonă pitorească, liniștită, zona perfectă pentru construcția unei case de locuit de vis. Drum de acces cu piețriș, rețelele inginerești sunt conectate. Cu un cumpărător real prețul se mai discută. ";
       document.querySelector(".date-js").innerHTML = " 18 ianuarie 2022";
       document.querySelector(".price-js").innerHTML = "Preț: 6200$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: ";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 8) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
@@ -229,8 +227,7 @@ function popUp(oferta) {
         "De vînzare Teren pentru Construcții cu suprafața de 0,0700 ha în or. Leova, amplasat în zona locurilor de casă atribuite pentru familiile tinere, la ROZA. Cu un cumpărător real prețul se mai discută.";
       document.querySelector(".date-js").innerHTML = "20 ianuarie 2021";
       document.querySelector(".price-js").innerHTML = "Preț: 3500$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: ";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 12) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
@@ -292,8 +289,7 @@ function popUp(oferta) {
         "De vînzare teren pentru construții cu suprafața de 0,0649 ha, amplasat în zona centru, drumul asfaltat pînă la teren, există acces la toate rețelele inginerești. Cu un cumpărător real prețul se mai discută.";
       document.querySelector(".date-js").innerHTML = "13 august 2020";
       document.querySelector(".price-js").innerHTML = "Preț : 9000$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: ";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 15) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
@@ -355,8 +351,7 @@ function popUp(oferta) {
         "De vînzare teren pentru construcții cu suprafața de 0,0769 ha. Amplasare în centrul orașului Leova, există acces la toate rețelele inginerești.";
       document.querySelector(".date-js").innerHTML = "10 iulie 2020";
       document.querySelector(".price-js").innerHTML = "Preț : 10 000$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: ";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 18) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
@@ -376,8 +371,7 @@ function popUp(oferta) {
         "Se vând 2 terenuri pentru construcție cu suprafața totală de 0,1286 ha, str. Burebista, cu acces la drum fiecare, se poate de vîndut și aparte. Este acces la toate rețelele, gaz, electricitate, canalizare și apa";
       document.querySelector(".date-js").innerHTML = "1 iunie 2020";
       document.querySelector(".price-js").innerHTML = "Preț: 10 000$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: str. Burebista";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: str. Burebista";
     } else if (oferta == 19) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
@@ -397,8 +391,7 @@ function popUp(oferta) {
         "De vînzare Casă de locuit cu teren aferent de 0,0800 ha. Zona - Centru. Apă, canalizare, gaz.";
       document.querySelector(".date-js").innerHTML = "26 mai 2020";
       document.querySelector(".price-js").innerHTML = "Preț: 12 000$";
-      document.querySelector(".adresa-js").innerHTML =
-        "Adresa: ";
+      document.querySelector(".adresa-js").innerHTML = "Adresa: ";
     } else if (oferta == 20) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
       document.querySelector(".pop-up-photos").style.gap = "1%";
