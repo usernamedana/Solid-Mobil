@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="script/script.js"></script>
     <script type="text/javascript" src="script/carosel.js"></script>
+    <script type="text/javascript" src="script/email.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href='http://www.solidimobil.com/favicon.ico' rel='icon' type='image/x-icon'/>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script type="text/javascript">
+        emailjs.init('zC-2UXQzoyM_zCFOh')
+      </script>    
 </head>
 
 <body>
@@ -160,11 +166,12 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a onclick="popUp(2)">Magazin/cafenea</a>
+                                    <a onclick="popUp(2)">Casa/Teren</a>
                                 </h3>
 
                                 <p class="oferte-text">
-                                    Ofertă specială pentru cei care doresc să investească în comerț!!! 
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
                                 </p>
 
                                 <ul class="oferte-lista">
@@ -195,7 +202,7 @@
                             <figure class="oferte-img">
 
                                 <a onclick="popUp(3)">
-                                    <img src="popupimagini/img.3.0.jpg" alt="Casa Noua">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
                                 </a>
 
                             </figure>
@@ -203,15 +210,16 @@
                             <div class="oferte-continut">
 
                                 <div class="oferte-pret">
-                                    <strong>Preț: 10 000$</strong>
+                                    <strong>Preț</strong>
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a onclick="popUp(3)">Teren pentru construcții</a>
+                                    <a onclick="popUp(3)">Casa/Teren</a>
                                 </h3>
 
                                 <p class="oferte-text">
-                                    De vînzare teren pentru construcții, cu iesire la drumul național care duce la Vama Leova-Bumbăta.
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
                                 </p>
 
                                 <ul class="oferte-lista">
@@ -221,11 +229,11 @@
                                     </li>
 
                                     <li class="oferte-info">
-                                        <span><strong> str.</strong> Cîmpiilor</span>
+                                        <span><strong>2</strong> Detalii</span>
                                     </li>
 
                                     <li class="oferte-info">
-                                        <span><strong> 0,0950 </strong> Ha</span>
+                                        <span><strong>3</strong> Detalii</span>
                                     </li>
 
                                 </ul>
@@ -242,7 +250,7 @@
                             <figure class="oferte-img">
 
                                 <a onclick="popUp(4)">
-                                    <img src="popupimagini/img4.0.JPG" alt="Casa Noua">
+                                    <img src="imagini/imagehouse.jpg" alt="Casa Noua">
                                 </a>
 
                             </figure>
@@ -254,11 +262,12 @@
                                 </div>
 
                                 <h3 class="h3 oferte-titlu">
-                                    <a onclick="popUp(4)">casă de locuit</a>
+                                    <a onclick="popUp(4)">Casa/Teren</a>
                                 </h3>
 
                                 <p class="oferte-text">
-                                    De vînzare Casă de locuit cu 1 nivel, amenajat cu viță de vie și alte utilități. 
+                                    Descriere - Casa este amplasată în apropiere de vama Leova-Bumbăta, zona pentru
+                                    iubitorii...
                                 </p>
 
                                 <ul class="oferte-lista">
@@ -272,7 +281,7 @@
                                     </li>
 
                                     <li class="oferte-info">
-                                        <span><strong>0,1700</strong>Ha</span>
+                                        <span><strong>3</strong> Detalii</span>
                                     </li>
 
                                 </ul>
@@ -1245,18 +1254,16 @@
             </div>
 
             <div class="formular-sectiune">
-                <form id="formular" action="https://formsubmit.co/emmaverabsv.2018@gmail.com" method="POST">
+                
                     <h3>Lăsați-ne un mesaj</h3>
-                    <input type="hidden" name="_captcha" value="false">
+                    <!--<input type="hidden" name="_captcha" value="false">-->
                     <!-- <input type="hidden" name="_subject" value="Solid Imobil!"> -->
-                    <input type="hidden" name="_next" value="http://www.solidimobil.com">
-                    <input type="text" name="_subject" id="nume" placeholder="Nume" required>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <br>
-                    <textarea  id="mesaj" name="message" rows="4" placeholder="Mesaj" required></textarea>
-                    <br>
-                    <input style="cursor: pointer;" type="submit" id="transmite" value="Transmite">
+                <input type="hidden" name="_next" value="http://www.solidimobil.com"> 
+                    <input type="text" id="nume" placeholder="Nume" required><br>
+                    <input type="email" id="email_id" placeholder="Email" required><br>
+                    <textarea name="message" id="mesaj" rows="4" placeholder="Mesaj" required></textarea><br>
+                    <button onclick="SendMail()">Transmite</button>
+                    <!-- <input style="cursor: pointer;" type="submit" id="transmite" value="Transmite"> -->
                 </form>
             </div>
             <div class="contacte-link-box">
@@ -1302,6 +1309,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/carosel.js"></script>
+    <script src="js/email.js"></script>
 
 </body>
 
