@@ -23,9 +23,10 @@ body {
 a,
 img,
 span,
-button{
+button {
     display: block;
 }
+
 
 button {
     border: none;
@@ -48,11 +49,13 @@ button {
 }
 
 .h3 {
-  font-size: 1.125rem;
-  font-weight: 700;
+    font-size: 1.125rem;
+    font-weight: 700;
 }
 
-.h3 > a { color: inherit; }
+.h3>a {
+    color: inherit;
+}
 
 .h2 {
     color: hsl(188, 63%, 7%);
@@ -61,9 +64,18 @@ button {
     line-height: 1;
 }
 
-li { list-style: none;}
+li {
+    list-style: none;
+}
 
 .sectiune {
+    padding-inline: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectiune-pagini {
     padding-inline: 120px;
     display: flex;
     align-items: center;
@@ -87,11 +99,6 @@ li { list-style: none;}
     margin-bottom: 50px;
 }
 
-.sectiune-titlu {
-    text-align: var(--text-align, center);
-    margin-bottom: var(--margin-bottom, 50px);
-}
-
 .sectiune-text {
     font-size: 0.875rem;
     line-height: 1.8;
@@ -104,6 +111,7 @@ li { list-style: none;}
     flex-shrink: 0;
     scroll-snap-align: start;
 }
+
 .carosel {
     display: flex;
     overflow-x: hidden;
@@ -115,21 +123,36 @@ li { list-style: none;}
 }
 
 
- 
 
-   /* MENIU  */
 
-.meniu{
-    margin: 20px 40px;
+/* MENIU  */
+
+
+
+
+
+.meniu {
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    right: 0;
+    z-index: 3;
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    padding: 10px 40px;
+    box-shadow: 10px 5px 5px hsl(192, 24%, 96%);
 }
 
 .logo-ul {
+    width: 160px;
+    height: 60px;
     cursor: pointer;
     padding: 0px 25px;
+
 }
+
 
 .BaraDeNavigare {
     display: flex;
@@ -143,31 +166,47 @@ li { list-style: none;}
 
 .link-navigare {
     color: hsl(188, 63%, 7%);
-    --fs-5: 1.125rem;
+    font-size: 1.15rem;
     text-transform: capitalize;
-    
+
 }
 
 .link-navigare:is(:hover, :focus) {
-    color: hsl(226, 100%, 75%);
+    color: #475F97;
+}
+
+#hamburger {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    position: absolute;
+    right: 200px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+    padding: 0px;
 }
 
 
 
-  /* ACASA */
+
+
+/* ACASA */
 
 .Acasa {
     background: hsl(192, 24%, 96%);
-    padding-block: 40px;
+    padding-top: 120px;
+    padding-bottom: 40px;
 }
 
 .Acasa-titlu {
     margin-top: 30px;
     margin-bottom: 20px;
+    width: 120%;
 }
 
 .Acasa-continut {
     margin-bottom: 40px;
+    margin-right: 30px;
 }
 
 .Acasa-text {
@@ -189,6 +228,7 @@ li { list-style: none;}
     width: 585px;
     height: 440px;
     margin: 3rem;
+    border-radius: 5px;
 }
 
 .optiuni {
@@ -201,7 +241,20 @@ li { list-style: none;}
     border-bottom: 1px solid hsl(200, 15%, 43%);
 }
 
-.optiuni a {
+.optiuni-pagini {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    display: inline-flex;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-top: 1px solid hsl(200, 15%, 43%);
+    border-bottom: 1px solid hsl(200, 15%, 43%);
+}
+
+.optiuni a,
+.optiuni-pagini a {
     margin: 5px;
     list-style: none;
     display: inline-block;
@@ -225,10 +278,16 @@ li { list-style: none;}
     color: hsl(200, 15%, 43%);
 }
 
+.opt {
+    padding-inline: 20px;
+}
+
+.opt-text:is(:hover, :focus) {
+    color: #475F97;
+}
 
 
-
-    /* DESPRE NOI */
+/* DESPRE NOI */
 
 .despre-noi {
     padding-block: 50px;
@@ -243,6 +302,7 @@ li { list-style: none;}
     width: 420px;
     height: 420px;
     margin-right: 40px;
+    border-radius: 5px;
 }
 
 .despre-noi-continut {
@@ -254,8 +314,8 @@ li { list-style: none;}
 }
 
 .despre-noi .sectiune-titlu {
-    --text-align: left;
-    --margin-bottom: 15px;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 .despre-noi-text {
@@ -279,7 +339,7 @@ li { list-style: none;}
 
 
 
-   /* OFERTE */
+/* OFERTE */
 
 
 .oferte {
@@ -293,12 +353,21 @@ li { list-style: none;}
     position: relative;
 }
 
+.oferte .sectiune-pagini {
+    display: block;
+    padding-inline: 20px;
+    align-items: center;
+    position: relative;
+    padding-top: 70px;
+}
+
 .oferte-opt {
     border: 1px solid hsl(210, 100%, 97%);
     box-shadow: 0 16px 32px hsla(188, 63%, 7%, 0.1);
     margin: 10px 15px;
     width: 300px;
     height: 400px;
+    border-radius: 10px;
 }
 
 .oferte-lista {
@@ -307,14 +376,21 @@ li { list-style: none;}
     justify-content: center;
 }
 
-.apartamente, .case, .terenuri, .spatiicomerciale  {
+.apartamente,
+.case,
+.terenuri,
+.spatiicomerciale {
     display: inline-table;
     align-items: center;
     justify-content: center;
 }
 
-.sectiune-apartamente, .sectiune-case, .sectiune-terenuri, .sectiune-spatiicomerciale{
+.sectiune-apartamente,
+.sectiune-case,
+.sectiune-terenuri,
+.sectiune-spatiicomerciale {
     margin: 0 70px;
+
 }
 
 .oferte-opt .oferte-img {
@@ -324,6 +400,7 @@ li { list-style: none;}
     aspect-ratio: 1 / 1;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .oferte-opt .oferte-img img {
@@ -352,11 +429,13 @@ li { list-style: none;}
 }
 
 .oferte-pret {
-    color: hsl(9, 100%, 62%);
+    color: #475F97;
+    /*hsl(9, 100%, 62%);*/
     font-family: "Poppins", sans-serif;
     font-size: 0.813rem;
     margin: 5px 0px;
 }
+
 
 .oferte-pret strong {
     font-size: 1.125rem;
@@ -370,7 +449,7 @@ li { list-style: none;}
 }
 
 .oferte-opt .oferte-titlu>a:is(:hover, :focus) {
-    color: hsl(9, 100%, 62%);
+    color: #475F97;
 }
 
 .oferte-opt .oferte-text {
@@ -406,11 +485,13 @@ li { list-style: none;}
     padding: 10px;
     margin: 0 40px;
     cursor: pointer;
-  }
+}
+
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
+
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -418,34 +499,38 @@ li { list-style: none;}
 
 
 /*Pop-up*/
-.pop-up-js{
+
+.pop-up-js {
     position: absolute;
     display: none;
     flex-direction: column;
     align-items: center;
     width: 70%;
-    background-color: rgba(128, 128, 128, 0.9);
+    background-color: rgba(39, 37, 37, 0.97);
     top: 0;
     left: 15%;
     z-index: 1000;
     padding: 1% 0;
-    border-radius: 2vh;
+    border-radius: 1.5vh;
 }
+
 .exit-js {
     position: absolute;
     font-size: 30px;
-    right: 1.5vh;
-    top: 1.5vh;
+    right: 2.5vh;
+    top: 2.5vh;
     transition: 0.5s;
     padding: 0 1vh;
     background-color: white;
     border-radius: 4vh;
 }
+
 .exit-js:hover {
     transition: 0.5s;
     color: white;
     background-color: black;
 }
+
 .pop-up-photos {
     display: flex;
     justify-content: center;
@@ -453,17 +538,20 @@ li { list-style: none;}
     height: 19vh;
     width: 90%;
 }
-.pop-up-photos img{
+
+.pop-up-photos img {
     width: 15%;
     height: auto;
     border-radius: 2vh;
 }
+
 .pop-up-bottom {
     display: flex;
     justify-content: center;
     width: 90%;
     color: white;
 }
+
 .pop-up-bottom-left {
     display: flex;
     flex-direction: column;
@@ -473,13 +561,17 @@ li { list-style: none;}
     text-align: left;
     position: relative;
 }
+
 .main-txt-js {
-    font-size: 28px;
+    font-size: 22px;
 }
+
 .date-js {
-    font-size: 24px;
+    font-size: 16px;
     text-align: left;
+    padding-top: 10px;
 }
+
 .pop-up-bottom-right {
     padding-left: 5vh;
     padding-top: 3vh;
@@ -490,20 +582,28 @@ li { list-style: none;}
     width: 48%;
     gap: 1%;
 }
+
 .price-js {
-    font-size: 38px;
+    font-size: 25px;
+    font-weight: 900;
 }
+
 .adresa-js {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
+
 .pop-up-contact-js {
     font-size: 20px;
+    font-weight: 900;
     padding: 1vh 2vh;
+    margin-top: 1vh;
     background-color: white;
     color: black;
-    border-radius: 2vh;
+    border-radius: 1.5vh;
     transition: 0.5s;
 }
+
 .pop-up-contact-js:hover {
     transition: 0.5s;
     background-color: black;
@@ -513,7 +613,7 @@ li { list-style: none;}
 
 
 
-   /* SERVICII */
+/* SERVICII */
 
 .servicii {
     background: hsl(192, 24%, 96%);
@@ -540,13 +640,14 @@ li { list-style: none;}
     gap: 30px;
 }
 
-.servicii-opt{
+.servicii-opt {
     background: hsl(0, 0%, 100%);
     text-align: center;
     padding: 40px 30px;
     box-shadow: 0 16px 32px hsla(188, 63%, 7%, 0.1);
     width: 360px;
     height: 360px;
+    border-radius: 5px;
 }
 
 .servicii-opt .opt-icon {
@@ -568,13 +669,13 @@ li { list-style: none;}
 }
 
 .servicii-opt .opt-titlu>a:is(:hover, :focus) {
-    color: hsl(9, 100%, 62%);
+    color: #475F97;
 }
 
 
 
 
-   /* CONTACTE */
+/* CONTACTE */
 
 .contacte {
     background: hsl(227, 29%, 13%);
@@ -587,14 +688,16 @@ li { list-style: none;}
     padding-inline: 10px;
 }
 
-.contacte .sectiune .mapa, .formular-sectiune, .contacte-link-box {
+.contacte .sectiune .mapa,
+.formular-sectiune,
+.contacte-link-box {
     margin-bottom: 25px;
     padding-inline: 25px;
     align-items: center;
     justify-content: space-between;
 }
 
-.contacte .sectiune .contacte-img{
+.contacte .sectiune .contacte-img {
     margin-bottom: 25px;
     padding-inline: 10px;
     align-items: center;
@@ -638,7 +741,7 @@ li { list-style: none;}
     gap: 20px;
 }
 
-.detalii-lista{
+.detalii-lista {
     margin-top: 20px;
     display: inline-block;
 }
@@ -672,11 +775,11 @@ li { list-style: none;}
 
 
 
-  /* APEL LA ACTIUNE */
+/* APEL LA ACTIUNE */
 
 .apel-la-actiune {
     padding-top: 30px;
-    background: linear-gradient( hsl(192, 24%, 96%) 50%, hsl(227, 29%, 13%) 50%);
+    background: linear-gradient(hsl(192, 24%, 96%) 50%, hsl(227, 29%, 13%) 50%);
 }
 
 .apel-la-actiune-opt {
@@ -732,7 +835,7 @@ li { list-style: none;}
     width: 0;
     height: 100%;
     background: hsl(0, 0%, 100%);
-    transition:  0.25s ease;
+    transition: 0.25s ease;
     z-index: -1;
 }
 
@@ -766,6 +869,10 @@ li { list-style: none;}
     margin: 0px 20px 20px 0px;
 }
 
+iframe {
+    border-radius: 5px
+}
+
 form {
     display: block;
     margin-top: 0em;
@@ -781,7 +888,8 @@ form {
     overflow: auto;
 }
 
-.formular-sectiune input, .formular-sectiune textarea {
+.formular-sectiune input,
+.formular-sectiune textarea {
     width: 80%;
     margin-bottom: 15px;
     resize: none;
@@ -793,7 +901,7 @@ form {
 }
 
 .formular-sectiune input[type="button"] {
-    cursor:pointer;
+    cursor: pointer;
     width: 130px;
     float: center;
     background-color: hsl(200, 15%, 43%);
@@ -802,4 +910,65 @@ form {
 
 .formular-sectiune h3 {
     padding: 15px;
+}
+
+
+
+@media (max-width: 760px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo-ul {
+        width: 125px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .meniu {
+        padding: 10px 10px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    #main-menu {
+        display: none;
+    }
+
+    nav.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+        height: auto;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .sectiune {
+        padding-inline: 10px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .Acasa-titlu {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .img-casa {
+        width: 100%;
+        height: 100%;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+
 }

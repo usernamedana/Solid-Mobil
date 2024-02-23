@@ -20,9 +20,9 @@ function popUp(oferta) {
       document.querySelector(".pop-up-img-9").style.display = "none";
       document.querySelector(".pop-up-img-10").style.display = "none";
       document.querySelector(".main-txt-js").innerHTML =
-        "De vînzare Casă de locuit pe str. Podul de Flori cu teren aferent 0,1291 ha, acces la toate rețelele inginerești. Drumul de acces pietriș. Casa este amplasată în apropiere de vama Leova-Bumbăta, un loc cu vedere către lunca prutului, o zonă liniștită și plăcută pentru toți cei care iubesc natura.";
+        "De vînzare casă de locuit pe str. <i> Podul de Flori </i> cu teren aferent 0,1291 ha, acces la toate rețelele inginerești. <br> Drumul de acces pietriș. Casa este amplasată în apropiere de vama Leova-Bumbăta, un loc cu vedere către lunca prutului, o zonă liniștită și plăcută pentru toți cei care iubesc natura.";
       document.querySelector(".date-js").innerHTML = "23 august 2023";
-      document.querySelector(".price-js").innerHTML = "Price: 20000$";
+      document.querySelector(".price-js").innerHTML = "Preț: 20,000 €";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
     } else if (oferta == 2) {
@@ -71,10 +71,10 @@ function popUp(oferta) {
       document.querySelector(".pop-up-photos").style.gap = "1%";
       document.querySelector(".pop-up-photos img").style.width = "15%";
       document.querySelector(".pop-up-img-1").style.display = "none";
-      document.querySelector(".pop-up-img-2").src = "popupimagini/img4.1.jpg";
-      document.querySelector(".pop-up-img-3").src = "popupimagini/img4.2.jpg";
-      document.querySelector(".pop-up-img-4").src = "popupimagini/img4.3.jpg";
-      document.querySelector(".pop-up-img-5").style.display = "none";
+      document.querySelector(".pop-up-img-2").src = "popupimagini/img4.0.jpg";
+      document.querySelector(".pop-up-img-3").src = "popupimagini/img4.1.jpg";
+      document.querySelector(".pop-up-img-4").src = "popupimagini/img4.2.jpg";
+      document.querySelector(".pop-up-img-5").src = "popupimagini/img4.3.jpg";
       document.querySelector(".pop-up-img-6").style.display = "none";
       document.querySelector(".pop-up-img-7").style.display = "none";
       document.querySelector(".pop-up-img-8").style.display = "none";
@@ -246,7 +246,7 @@ function popUp(oferta) {
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare Casă de locuit pe str. M. Sadoveanu, cu teren aferent 0,060 ha, rețelele inginerești sunt conectate. Drumul de acces pietriș. În proiect există posibilitatea de a construi și Mansardă.";
       document.querySelector(".date-js").innerHTML = "4 septembrie 2020";
-      document.querySelector(".price-js").innerHTML = "Price: 20000$";
+      document.querySelector(".price-js").innerHTML = "Preț: 20000$";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. M. Sadoveanu";
     } else if (oferta == 13) {
@@ -421,4 +421,14 @@ function popUp(oferta) {
 function scrollFunction(location) {
   const element = document.querySelector(`.${location}`);
   element.scrollIntoView({ behavior: "smooth" });
+}
+
+
+function mobileMenu() {
+  var x = document.getElementsByTagName("nav")[0];
+  if (x.className === "") {
+      x.className += "mobile";
+  } else {
+      x.className = "";
+  }
 }
