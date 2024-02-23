@@ -503,15 +503,17 @@ li {
 .pop-up-js {
     position: absolute;
     display: none;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     width: 70%;
-    background-color: rgba(39, 37, 37, 0.97);
+    background-color: rgba(29, 30, 30, 0.945);
     top: 0;
     left: 15%;
-    z-index: 1000;
+    z-index: 1;
     padding: 1% 0;
-    border-radius: 1.5vh;
+    border-radius: 2vh;
+    border: #1f1f86;
+    border: 4px;
 }
 
 .exit-js {
@@ -537,6 +539,7 @@ li {
     gap: 1%;
     height: 19vh;
     width: 90%;
+    
 }
 
 .pop-up-photos img {
@@ -544,7 +547,11 @@ li {
     height: auto;
     border-radius: 2vh;
 }
-
+.pop-up-photos img:hover {
+    scale: 200%;
+    z-index: 5;
+   
+}
 .pop-up-bottom {
     display: flex;
     justify-content: center;
@@ -564,12 +571,21 @@ li {
 
 .main-txt-js {
     font-size: 22px;
+    border-radius: 2vh;
+    margin-bottom: 8px;
+    padding: 20px 20px 20px 20px  ;
+
 }
 
 .date-js {
     font-size: 16px;
-    text-align: left;
+    text-decoration-color: rgb(103, 126, 255);
+    text-align: center;
     padding-top: 10px;
+    background-color: #071e5057;
+    border-radius: 2vh;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .pop-up-bottom-right {
@@ -578,7 +594,7 @@ li {
     display: flex;
     flex-direction: column;
     text-align: left;
-    align-items: baseline;
+    align-items: center ;
     width: 48%;
     gap: 1%;
 }
@@ -586,11 +602,23 @@ li {
 .price-js {
     font-size: 25px;
     font-weight: 900;
+    color: rgb(230, 30, 4);
+    border-radius: 2vh;
+    padding-bottom: 8px;
+    padding: 20px 20px 20px 20px ;
+    margin: 20px 20px 20px 20px ;
 }
 
 .adresa-js {
     font-size: 20px;
     font-weight: 600;
+    text-decoration-color: rgb(103, 126, 255);
+    text-align: center;
+    padding-top: 10px;
+    background-color: #071e506e;
+    border-radius: 2vh;
+    padding-bottom: 8px;
+    padding: 10px 10px 10px 10px ;
 }
 
 .pop-up-contact-js {
@@ -606,7 +634,7 @@ li {
 
 .pop-up-contact-js:hover {
     transition: 0.5s;
-    background-color: black;
+    background-color: #475F97;
     color: white;
 }
 
@@ -914,28 +942,32 @@ form {
 
 
 
- @media (max-width: 760px) {
-    
+@media (max-width: 760px) {
+    body {
+        font-size: 16px;
+    }
 
-    
-   .logo-ul{
-    width: 12%;
-    height: 12%;
-   }
-     
+    .logo-ul {
+        width: 125px;
+        height: 40px;
+        cursor: pointer;
+    }
 
     .meniu {
-        padding: 5px 0px;
+        padding: 10px 10px;
+    }
+
+    header {
+        padding: 0px;
     }
 
     #main-menu {
         display: none;
     }
 
-
     nav.mobile a {
         display: block;
-        text-align: right;
+        text-align: center;
         margin-top: 12px;
         height: auto;
     }
@@ -948,14 +980,23 @@ form {
         display: block;
     }
 
-    .Acasa, .despre-noi, .servicii, .contacte {
-        display: inline-block;
-    }  
-
-    .sectiune{
-        display: inline-block;
+    .sectiune {
         padding-inline: 10px;
+        max-height: 100%;
+        max-width: 100%;
     }
 
-} 
-    
+    .Acasa-titlu {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .img-casa {
+        width: 100%;
+        height: 100%;
+        margin: 1rem;
+        border-radius: 5px;
+    }
+
+}
