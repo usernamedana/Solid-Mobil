@@ -914,33 +914,28 @@ form {
 
 
 
-@media (max-width: 760px) {
-    body {
-        width: fit-content;
+ @media (max-width: 760px) {
+    
+
+    
+   .logo-ul{
+    width: 12%;
+    height: 12%;
+   }
+     
+
+    .meniu {
+        padding: 5px 0px;
     }
-
-    header {
-        padding: 0px;
-
-    }
-
-    .logo-ul {
-        width: 15%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    header {
-        padding: 0px;
-    } 
 
     #main-menu {
         display: none;
     }
 
+
     nav.mobile a {
         display: block;
-        text-align: center;
+        text-align: right;
         margin-top: 12px;
         height: auto;
     }
@@ -953,10 +948,14 @@ form {
         display: block;
     }
 
-    .sectiune, .Acasa, .despre-noi {
+    .Acasa, .despre-noi, .servicii, .contacte {
         display: inline-block;
-        width: max-content;
-    } 
+    }  
 
-}
+    .sectiune{
+        display: inline-block;
+        padding-inline: 10px;
+    }
+
+} 
     
