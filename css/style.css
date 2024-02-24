@@ -172,7 +172,7 @@ nav a {
 }
 
 .link-navigare:is(:hover, :focus) {
-    color: #475F97;
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 #hamburger {
@@ -233,7 +233,6 @@ nav a {
 .optiuni {
     width: fit-content;
     display: flex;
-    box-sizing: border-box;
     padding: 5px;
     margin-top: 20px;
     border-top: 1px solid hsl(200, 15%, 43%);
@@ -274,7 +273,7 @@ nav a {
     position: relative;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 28px;
     color: hsl(200, 15%, 43%);
 }
 
@@ -283,7 +282,7 @@ nav a {
 }
 
 .opt-text:is(:hover, :focus) {
-    color: #475F97;
+    color:hsl(222, 36.04%, 43.53%);
 }
 
 
@@ -300,8 +299,9 @@ nav a {
 .despre-noi-img img {
     max-width: max-content;
     width: 420px;
-    height: 420px;
+    height: 425px;
     margin-right: 40px;
+    margin-bottom: 30px;
     border-radius: 5px;
 }
 
@@ -348,7 +348,7 @@ nav a {
 
 .oferte .sectiune {
     display: block;
-    padding-inline: 20px;
+    padding-inline: 10px;
     align-items: center;
     position: relative;
 }
@@ -429,8 +429,7 @@ nav a {
 }
 
 .oferte-pret {
-    color: #475F97;
-    /*hsl(9, 100%, 62%);*/
+    color: hsl(222, 36.04%, 43.53%);
     font-family: "Poppins", sans-serif;
     font-size: 0.813rem;
     margin: 5px 0px;
@@ -449,7 +448,7 @@ nav a {
 }
 
 .oferte-opt .oferte-titlu>a:is(:hover, :focus) {
-    color: #475F97;
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 .oferte-opt .oferte-text {
@@ -506,31 +505,30 @@ nav a {
     flex-direction: column;
     align-items: center;
     width: 70%;
-    background-color: rgba(39, 37, 37, 0.97);
+    background-color:rgb(246, 246, 246);
     top: 0;
     left: 15%;
     z-index: 1000;
     padding: 1% 0;
     border-radius: 1.5vh;
+    border: 5px solid hsl(200, 15%, 43%) ;
 }
 
 .exit-js {
     position: absolute;
-    font-size: 30px;
-    right: 2.5vh;
-    top: 2.5vh;
+    font-size: 45px;
+    right: 2vh;
+    top: 2vh;
     transition: 0.5s;
-    padding: 0 1vh;
-    background-color: white;
-    border-radius: 4vh;
-}
+    color: rgb(0, 0, 0);
+} 
 
 
 .exit-js:hover {
     transition: 0.5s;
-    color: white;
-    background-color: black;
-}
+    color: rgba(255, 255, 255);
+} 
+
 
 .pop-up-photos {
     display: flex;
@@ -546,10 +544,6 @@ nav a {
     border-radius: 2vh;
 }
 
-.pop-up-photos img:hover {
-    scale: 200%;
-    z-index: 5;
-}
 .pop-up-bottom {
     display: flex;
     justify-content: center;
@@ -569,15 +563,14 @@ nav a {
 
 .main-txt-js {
     font-size: 22px;
+    color: hsl(0, 0%, 0%);
 }
 
 .date-js {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
-    padding-bottom: 8px;
-    background-color:  #475F97;
-    border-radius: 2vh;
+    color: hsl(200, 15%, 43%);
 }
 
 .pop-up-bottom-right {
@@ -594,12 +587,13 @@ nav a {
 .price-js {
     font-size: 25px;
     font-weight: 900;
-    color: rgb(230, 30, 4);
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 .adresa-js {
     font-size: 20px;
     font-weight: 600;
+    color: hsl(200, 15%, 43%);
 }
 
 .pop-up-contact-js {
@@ -607,15 +601,15 @@ nav a {
     font-weight: 900;
     padding: 1vh 2vh;
     margin-top: 1vh;
-    background-color: white;
-    color: black;
+    background-color: hsl(222, 36.04%, 43.53%);
+    color: rgb(255, 251, 251);
     border-radius: 1.5vh;
     transition: 0.5s;
 }
 
 .pop-up-contact-js:hover {
     transition: 0.5s;
-    background-color: #475F97;
+    background-color: hsl(200, 15%, 43%);
     color: white;
 }
 
@@ -678,7 +672,7 @@ nav a {
 }
 
 .servicii-opt .opt-titlu>a:is(:hover, :focus) {
-    color: #475F97;
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 
@@ -741,7 +735,7 @@ nav a {
 }
 
 .contacte-link:is(:hover, :focus) span {
-    color: hsl(9, 100%, 62%);
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 .r-sociale-lista {
@@ -768,7 +762,7 @@ nav a {
 }
 
 .detalii-link:is(:hover, :focus) {
-    color: hsl(9, 100%, 62%);
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 .sectiune-copyright {
@@ -820,12 +814,10 @@ nav a {
 
 .buton {
     position: relative;
-    background: hsl(9, 100%, 62%);
     color: hsl(0, 0%, 100%);
     font-family: "Poppins", sans-serif;
     font-size: 0.875rem;
     text-transform: capitalize;
-    border: 1px solid hsl(9, 100%, 62%);
     padding: 10px 20px;
     z-index: 1;
 }
@@ -917,6 +909,10 @@ form {
     color: white;
 }
 
+.formular-sectiune input[type="button"]:is(:hover, :focus) {
+    color: hsl(227, 29%, 13%);
+}
+
 .formular-sectiune h3 {
     padding: 15px;
 }
@@ -927,15 +923,12 @@ form {
 
 
  @media (max-width: 760px) {
-    
 
-    
    .logo-ul{
-    width: 12%;
-    height: 12%;
+    width: 32%;
+    height: 100%;
    }
      
-
     .meniu {
         padding: 5px 0px;
     }
@@ -980,7 +973,7 @@ form {
 
     .img-casa, .despre-noi-img img {
         width: 100%;
-        margin: 5px;
+        margin: 0px ;
         object-fit: cover;
     }
 
@@ -989,8 +982,9 @@ form {
     }
 
     .Acasa-titlu {
-        font-size: 200%;
+        font-size: 165%;
         text-align: center;
+        margin-top: -32px;
     }
 
     .Acasa-continut {
@@ -1030,5 +1024,48 @@ form {
         height: auto;
     }
 
-} 
+    .despre-noi .sectiune-subtitlu {
+        margin-top: 15px;
+    }
+
+    .apel-la-actiune-opt {
+        display: block;
+        padding: 20px 15px;
+    }
+
+    .apel-la-actiune-buton{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .opt-continut {
+        text-align: center;
+    }
+
+    .elemente {
+        margin: 10px;
+    }
+
+    .sectiune-titlu {
+        font-size: 165%;
+        margin-bottom: 10px;
+    }
     
+    .oferte-lista-terenuri{
+        display: block;
+    }
+
+    .oferte-opt .oferte-img img {
+        width: 250px;
+    }
+
+    .oferte-opt:hover .oferte-img img {
+        transform: none;
+    }
+
+    .oferte-opt .oferte-img::before {
+        background: none;
+        
+    }
+
+ }
