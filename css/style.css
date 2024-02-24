@@ -17,7 +17,6 @@ html {
 
 body {
     background: hsl(0, 0%, 100%);
-    overflow-x: hidden;
 }
 
 a,
@@ -153,16 +152,17 @@ li {
 
 }
 
-
-.BaraDeNavigare {
+nav {
     display: flex;
     justify-content: center;
 }
 
-.BaraDeNavigare a {
+nav a {
     display: inline-block;
     padding: 0px 20px;
+    margin-right: 10px;
 }
+
 
 .link-navigare {
     color: hsl(188, 63%, 7%);
@@ -201,7 +201,6 @@ li {
 .Acasa-titlu {
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 120%;
 }
 
 .Acasa-continut {
@@ -239,6 +238,7 @@ li {
     margin-top: 20px;
     border-top: 1px solid hsl(200, 15%, 43%);
     border-bottom: 1px solid hsl(200, 15%, 43%);
+
 }
 
 .optiuni-pagini {
@@ -306,7 +306,7 @@ li {
 }
 
 .despre-noi-continut {
-    height: 420px;
+    min-height: 420px;
 }
 
 .despre-noi .sectiune-subtitlu {
@@ -503,17 +503,15 @@ li {
 .pop-up-js {
     position: absolute;
     display: none;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     width: 70%;
-    background-color: rgba(29, 30, 30, 0.945);
+    background-color: rgba(39, 37, 37, 0.97);
     top: 0;
     left: 15%;
-    z-index: 1;
+    z-index: 1000;
     padding: 1% 0;
-    border-radius: 2vh;
-    border: #1f1f86;
-    border: 4px;
+    border-radius: 1.5vh;
 }
 
 .exit-js {
@@ -539,7 +537,6 @@ li {
     gap: 1%;
     height: 19vh;
     width: 90%;
-    
 }
 
 .pop-up-photos img {
@@ -547,11 +544,7 @@ li {
     height: auto;
     border-radius: 2vh;
 }
-.pop-up-photos img:hover {
-    scale: 200%;
-    z-index: 5;
-   
-}
+
 .pop-up-bottom {
     display: flex;
     justify-content: center;
@@ -571,21 +564,12 @@ li {
 
 .main-txt-js {
     font-size: 22px;
-    border-radius: 2vh;
-    margin-bottom: 8px;
-    padding: 20px 20px 20px 20px  ;
-
 }
 
 .date-js {
     font-size: 16px;
-    text-decoration-color: rgb(103, 126, 255);
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
-    background-color: #071e5057;
-    border-radius: 2vh;
-    padding-bottom: 8px;
-    margin-bottom: 5px;
 }
 
 .pop-up-bottom-right {
@@ -594,7 +578,7 @@ li {
     display: flex;
     flex-direction: column;
     text-align: left;
-    align-items: center ;
+    align-items: baseline;
     width: 48%;
     gap: 1%;
 }
@@ -602,23 +586,11 @@ li {
 .price-js {
     font-size: 25px;
     font-weight: 900;
-    color: rgb(230, 30, 4);
-    border-radius: 2vh;
-    padding-bottom: 8px;
-    padding: 20px 20px 20px 20px ;
-    margin: 20px 20px 20px 20px ;
 }
 
 .adresa-js {
     font-size: 20px;
     font-weight: 600;
-    text-decoration-color: rgb(103, 126, 255);
-    text-align: center;
-    padding-top: 10px;
-    background-color: #071e506e;
-    border-radius: 2vh;
-    padding-bottom: 8px;
-    padding: 10px 10px 10px 10px ;
 }
 
 .pop-up-contact-js {
@@ -634,7 +606,7 @@ li {
 
 .pop-up-contact-js:hover {
     transition: 0.5s;
-    background-color: #475F97;
+    background-color: black;
     color: white;
 }
 
@@ -811,7 +783,7 @@ li {
 }
 
 .apel-la-actiune-opt {
-    width: 1200px;
+    width: 100%;
     height: fit-content;
     background: hsl(200, 15%, 43%);
     display: flex;
@@ -940,63 +912,114 @@ form {
     padding: 15px;
 }
 
+.mapa iframe {
+    width: 380px;
+}
 
 
-@media (max-width: 760px) {
-    body {
-        font-size: 16px;
-    }
+ @media (max-width: 760px) {
+    
 
-    .logo-ul {
-        width: 125px;
-        height: 40px;
-        cursor: pointer;
-    }
+    
+   .logo-ul{
+    width: 12%;
+    height: 12%;
+   }
+     
 
     .meniu {
-        padding: 10px 10px;
+        padding: 5px 0px;
     }
 
     header {
-        padding: 0px;
-    }
-
-    #main-menu {
-        display: none;
+        min-height: 50px;
     }
 
     nav.mobile a {
         display: block;
         text-align: center;
         margin-top: 12px;
+        margin-bottom: 12px;
         height: auto;
+        font-size: 1.2rem;
     }
 
     nav {
-        display: block;
+        display: none !important;
+    }
+
+    nav.mobile {
+        display: block !important;
+        text-align: center;
+        width: 100%;
     }
 
     #hamburger {
         display: block;
+        right: 20px;
+        top: 10px;
     }
 
-    .sectiune {
+    .Acasa, .despre-noi, .servicii, .contacte {
+        display: block;
+    }  
+
+    .sectiune{
+        display: block;
         padding-inline: 10px;
-        max-height: 100%;
-        max-width: 100%;
+    }
+
+    .img-casa, .despre-noi-img img {
+        width: 100%;
+        margin: 5px;
+        object-fit: cover;
+    }
+
+    .mapa iframe {
+        width: 100%;
     }
 
     .Acasa-titlu {
-        margin-top: 30px;
-        margin-bottom: 20px;
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .Acasa-continut {
+        margin-right: 0px;
+    }
+
+    .opt {
+        padding-inline: 5px;
+        text-align: center;
+    }
+
+    .optiuni {
+        justify-content: center;
         width: 100%;
     }
 
-    .img-casa {
-        width: 100%;
-        height: 100%;
-        margin: 1rem;
-        border-radius: 5px;
+    .opt-titlu {
+        font-size: 1.8rem;
     }
 
-}
+    .opt-continut {
+        padding: 5px;
+    }
+
+    .formular-sectiune {
+        width: 100%;
+    }
+
+    .arrow {
+        margin: 0 5px;
+        border-width: 0 5px 5px 0;
+    }
+
+    .oferte-opt {
+        margin: 0px;
+        width: 250px;
+        height: auto;
+    }
+
+} 
+    

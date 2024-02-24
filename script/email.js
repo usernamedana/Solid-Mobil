@@ -30,9 +30,11 @@ function send() {
 
   var date = {
       nume: document.getElementById("nume").value,
-      email_id: document.getElementById("email_id").value,
-      message: document.getElementById("message").value
+      email: document.getElementById("email_id").value,
+      mesaj: document.getElementById("message").value
   };
+
+  console.log(date);
 
   emailjs.send("service_a7zdoof", "template_i41ckj9", date)
       .then(function (raspuns) {
