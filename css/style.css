@@ -282,7 +282,7 @@ nav a {
 }
 
 .opt-text:is(:hover, :focus) {
-    color:hsl(222, 36.04%, 43.53%);
+    color: hsl(222, 36.04%, 43.53%);
 }
 
 
@@ -481,7 +481,7 @@ nav a {
     border: solid black;
     border-width: 0 10px 10px 0;
     display: inline-block;
-    padding: 10px;
+    padding: 7px;
     margin: 0 40px;
     cursor: pointer;
 }
@@ -505,13 +505,13 @@ nav a {
     flex-direction: column;
     align-items: center;
     width: 70%;
-    background-color:rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246);
     top: 0;
     left: 15%;
     z-index: 1000;
     padding: 1% 0;
     border-radius: 1.5vh;
-    border: 5px solid hsl(200, 15%, 43%) ;
+    border: 5px solid hsl(200, 15%, 43%);
 }
 
 .exit-js {
@@ -521,13 +521,13 @@ nav a {
     top: 2vh;
     transition: 0.5s;
     color: rgb(0, 0, 0);
-} 
+}
 
 
 .exit-js:hover {
     transition: 0.5s;
     color: rgba(255, 255, 255);
-} 
+}
 
 
 .pop-up-photos {
@@ -922,13 +922,13 @@ form {
 }
 
 
- @media (max-width: 760px) {
+@media (max-width: 760px) {
 
-   .logo-ul{
-    width: 32%;
-    height: 100%;
-   }
-     
+    .logo-ul {
+        width: 130px;
+        height: 100%;
+    }
+
     .meniu {
         padding: 5px 0px;
     }
@@ -962,23 +962,31 @@ form {
         top: 10px;
     }
 
-    .Acasa, .despre-noi, .servicii, .contacte {
+    .Acasa,
+    .despre-noi,
+    .servicii,
+    .contacte {
         display: block;
-    }  
+    }
 
-    .sectiune{
+    .sectiune {
         display: block;
         padding-inline: 10px;
     }
 
-    .img-casa, .despre-noi-img img {
+    .img-casa,
+    .despre-noi-img img {
         width: 100%;
-        margin: 0px ;
+        margin: 0px;
         object-fit: cover;
     }
 
     .mapa iframe {
-        width: 100%;
+        width: 105%;
+    }
+
+    .contacte .sectiune .mapa {
+        padding-inline: 15px;
     }
 
     .Acasa-titlu {
@@ -1024,6 +1032,14 @@ form {
         height: auto;
     }
 
+    .despre-noi {
+        padding-block: 0px;
+    }
+
+    .despre-noi-text{
+        padding: 0px 10px;
+    }
+
     .despre-noi .sectiune-subtitlu {
         margin-top: 15px;
     }
@@ -1033,7 +1049,7 @@ form {
         padding: 20px 15px;
     }
 
-    .apel-la-actiune-buton{
+    .apel-la-actiune-buton {
         margin-top: 10px;
         margin-bottom: 5px;
     }
@@ -1042,21 +1058,22 @@ form {
         text-align: center;
     }
 
-    .elemente {
-        margin: 10px;
-    }
-
     .sectiune-titlu {
         font-size: 165%;
-        margin-bottom: 10px;
     }
-    
-    .oferte-lista-terenuri{
+
+    .sectiune .oferte {
+        padding-inline: 0px;
+    }
+
+    .oferte-lista-terenuri {
         display: block;
+        text-align: center;
     }
 
     .oferte-opt .oferte-img img {
         width: 250px;
+        border-radius: 5px 5px 0px 0px;
     }
 
     .oferte-opt:hover .oferte-img img {
@@ -1065,7 +1082,42 @@ form {
 
     .oferte-opt .oferte-img::before {
         background: none;
-        
+
     }
 
- }
+    .oferte-opt {
+        margin-left: 10px;
+    }
+
+    .carosel {
+        width: 80%;
+    }
+
+    .contacte-link-box {
+        text-align: center;
+    }
+
+    .contacte .sectiune-text {
+        margin: 12px 0px;
+    }
+
+    .sectiune-apartamente,
+    .sectiune-case,
+    .sectiune-terenuri,
+    .sectiune-spatiicomerciale {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .servicii .sectiune-titlu {
+        margin-bottom: 20px;
+    }
+
+    .optiuni-pagini{
+        margin-bottom: 0px;
+    }
+
+    .elemente{
+        margin-bottom: 15px;
+    }
+}
