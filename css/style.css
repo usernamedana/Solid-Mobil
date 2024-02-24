@@ -525,6 +525,7 @@ nav a {
     border-radius: 4vh;
 }
 
+
 .exit-js:hover {
     transition: 0.5s;
     color: white;
@@ -545,6 +546,10 @@ nav a {
     border-radius: 2vh;
 }
 
+.pop-up-photos img:hover {
+    scale: 200%;
+    z-index: 5;
+}
 .pop-up-bottom {
     display: flex;
     justify-content: center;
@@ -568,8 +573,11 @@ nav a {
 
 .date-js {
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     padding-top: 10px;
+    padding-bottom: 8px;
+    background-color:  #475F97;
+    border-radius: 2vh;
 }
 
 .pop-up-bottom-right {
@@ -586,6 +594,7 @@ nav a {
 .price-js {
     font-size: 25px;
     font-weight: 900;
+    color: rgb(230, 30, 4);
 }
 
 .adresa-js {
@@ -606,7 +615,7 @@ nav a {
 
 .pop-up-contact-js:hover {
     transition: 0.5s;
-    background-color: black;
+    background-color: #475F97;
     color: white;
 }
 
