@@ -1150,6 +1150,7 @@ form {
         gap: 1%;
         height: 19px;
         width: 90%;
+        margin-top: -10px;
     }
 
     .pop-up-photos img {
