@@ -1160,7 +1160,9 @@ form {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 46px;
         object-fit: cover;
+     
     }
 
     .date-js {
