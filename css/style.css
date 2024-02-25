@@ -26,7 +26,6 @@ button {
     display: block;
 }
 
-
 button {
     border: none;
     background: none;
@@ -122,13 +121,7 @@ li {
 }
 
 
-
-
 /* MENIU  */
-
-
-
-
 
 .meniu {
     margin: 0px;
@@ -163,7 +156,6 @@ nav a {
     margin-right: 10px;
 }
 
-
 .link-navigare {
     color: hsl(188, 63%, 7%);
     font-size: 1.15rem;
@@ -185,9 +177,6 @@ nav a {
     display: none;
     padding: 0px;
 }
-
-
-
 
 
 /* ACASA */
@@ -325,7 +314,6 @@ nav a {
     margin-bottom: 30px;
 }
 
-
 .despre-noi .mesaj {
     background: hsl(192, 24%, 96%);
     color: hsl(200, 15%, 43%);
@@ -338,9 +326,7 @@ nav a {
 }
 
 
-
 /* OFERTE */
-
 
 .oferte {
     padding-block: 50px;
@@ -390,7 +376,6 @@ nav a {
 .sectiune-terenuri,
 .sectiune-spatiicomerciale {
     margin: 0 70px;
-
 }
 
 .oferte-opt .oferte-img {
@@ -422,7 +407,6 @@ nav a {
     z-index: 1;
 }
 
-
 .oferte-opt .oferte-continut {
     padding: 5px 15px 15px;
 
@@ -434,7 +418,6 @@ nav a {
     font-size: 0.813rem;
     margin: 5px 0px;
 }
-
 
 .oferte-pret strong {
     font-size: 1.125rem;
@@ -523,18 +506,16 @@ nav a {
     color: rgb(0, 0, 0);
 }
 
-
 .exit-js:hover {
     transition: 0.5s;
-    color: rgba(255, 255, 255);
+    color: hsl(200, 15%, 43%);
 }
-
 
 .pop-up-photos {
     display: flex;
     justify-content: center;
     gap: 1%;
-    height: 19vh;
+    height: 20vh;
     width: 90%;
 }
 
@@ -542,6 +523,11 @@ nav a {
     width: 15%;
     height: auto;
     border-radius: 2vh;
+}
+
+.pop-up-photos img:hover {
+    scale: 200%;
+    z-index: 5;
 }
 
 .pop-up-bottom {
@@ -614,8 +600,6 @@ nav a {
 }
 
 
-
-
 /* SERVICII */
 
 .servicii {
@@ -676,8 +660,6 @@ nav a {
 }
 
 
-
-
 /* CONTACTE */
 
 .contacte {
@@ -707,11 +689,9 @@ nav a {
     justify-content: space-between;
 }
 
-
 .contacte a {
     color: inherit;
 }
-
 
 .contacte-img .logo-ul {
     margin-bottom: 10px;
@@ -774,8 +754,6 @@ nav a {
     font-size: 0.875rem;
     text-align: center;
 }
-
-
 
 
 /* APEL LA ACTIUNE */
@@ -1036,7 +1014,7 @@ form {
         padding-block: 0px;
     }
 
-    .despre-noi-text{
+    .despre-noi-text {
         padding: 0px 10px;
     }
 
@@ -1113,11 +1091,105 @@ form {
         margin-bottom: 20px;
     }
 
-    .optiuni-pagini{
+    .optiuni-pagini {
         margin-bottom: 0px;
     }
 
-    .elemente{
+    .elemente {
         margin-bottom: 15px;
     }
+
+    .pop-up-photos {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+        height: 20vh;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .pop-up-photos img {
+        /* width: 100px;
+        height: 100px; */
+        border-radius: 5px;
+        margin: 0px;
+    }
+
+    .pop-up-photos img:hover {
+        scale: none;
+    }
+
+    .main-txt-js {
+        font-size: 14px;
+    }
+
+    .pop-up-bottom {
+        width: 170%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pop-up-bottom-left,
+    .pop-up-bottom-right {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .pop-up-bottom-right {
+        align-items: center;
+    }
+
+    .pop-up-photos {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+        height: 19px;
+        width: 90%;
+    }
+
+    .pop-up-photos img {
+        width: 50%;
+        height: 50%;
+        border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+
+    .date-js {
+        font-size: 12px;
+        text-align: left;
+        padding-top: 2px;
+    }
+
+    .price-js {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .adresa-js {
+        font-size: 12px;
+    }
+
+    .pop-up-contact-js {
+        font-size: 16px;
+        padding: 6px;
+        margin-top: 10px;
+        border-radius: 12px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .exit-js {
+        right: 2px;
+        top: 2px;
+        font-size: 40px;
+        color: hsl(222, 36.04%, 43.53%);
+    }
+
 }
