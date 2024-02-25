@@ -18,7 +18,7 @@ function popUp(oferta) {
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare casă de locuit pe str. <i> Podul de Flori </i> cu teren aferent 0,1291 ha, acces la toate rețelele inginerești. <br> Drumul de acces pietriș. Casa este amplasată în apropiere de vama Leova-Bumbăta, un loc cu vedere către lunca prutului, o zonă liniștită și plăcută pentru toți cei care iubesc natura.";
       document.querySelector(".date-js").innerHTML = "Postat: 23 august 2023";
-      document.querySelector(".price-js").innerHTML = "Preț: 20,000$";
+      document.querySelector(".price-js").innerHTML = "Preț: 20,000 €";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
     } else if (oferta == 2) {
@@ -59,7 +59,7 @@ function popUp(oferta) {
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare teren pentru construcții cu suprafața de 0,0950 ha în or. Leova, amplasat pe str. Cîmpiilor, cu iesire la drumul național care duce la Vama Leova-Bumbăta. Este acces la rețele edilitare, apă, gaz și electricitate. Cu un cumpărător real prețul se mai discută.";
       document.querySelector(".date-js").innerHTML = "Postat: 7 iulie 2023";
-      document.querySelector(".price-js").innerHTML = "Preț: 10 000$";
+      document.querySelector(".price-js").innerHTML = "Preț: 10 000€";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Cîmpiilor";
     } else if (oferta == 4) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
@@ -79,7 +79,7 @@ function popUp(oferta) {
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare teren aferent Casei de locuit, cu suprafața de 0,1500 ha, este amplasat pe strada Unirii în apropiere de Centrul Multifuncțional.Casa de locuit este conectată la gaz, apă, electricitate. ";
       document.querySelector(".date-js").innerHTML = "Postat: 28 aprilie 2023";
-      document.querySelector(".price-js").innerHTML = "Preț: 20 500$";
+      document.querySelector(".price-js").innerHTML = "Preț: 20 500€";
       document.querySelector(".adresa-js").innerHTML = "Adresa: str. Unirii";
     } else if (oferta == 5) {
       document.querySelector(".pop-up-photos").style.height = "19vh";
@@ -99,7 +99,7 @@ function popUp(oferta) {
       document.querySelector(".main-txt-js").innerHTML =
         "De vînzare Casă de locuit cu 1 nivel, cu teren aferent 0,1700 ha, amenajat cu viță de vie și alte utilități.";
       document.querySelector(".date-js").innerHTML = "Postat: 3 aprilie 2023";
-      document.querySelector(".price-js").innerHTML = "Preț: 10 500$";
+      document.querySelector(".price-js").innerHTML = "Preț: 10 500€";
       document.querySelector(".adresa-js").innerHTML =
         "Adresa: str. Podul de Flori";
     } else if (oferta == 6) {
@@ -415,7 +415,7 @@ function popUp(oferta) {
 }
 
 function scrollFunction(location) {
-  const element = document.querySelector(`.${location}`);
+  const element = document.querySelector(`.€{location}`);
   element.scrollIntoView({ behavior: "smooth" });
 }
 
