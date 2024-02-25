@@ -1067,6 +1067,10 @@ form {
         margin-left: 10px;
     }
 
+    .terenuri.oferte-opt {
+        margin-left: 0px;
+    }
+
     .carosel {
         width: 80%;
     }
