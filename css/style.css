@@ -1067,7 +1067,7 @@ form {
         margin-left: 10px;
     }
 
-    .terenuri.oferte-opt {
+    .terenuri, .case, .spatii-comercialw .oferte-opt {
         margin-left: 0px;
     }
 
@@ -1113,8 +1113,6 @@ form {
     }
 
     .pop-up-photos img {
-        /* width: 100px;
-        height: 100px; */
         border-radius: 5px;
         margin: 0px;
     }
