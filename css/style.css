@@ -1151,9 +1151,10 @@ form {
         display: flex;
         justify-content: center;
         gap: 1%;
-        height: 19px;
+/*         height: 19px; */
         width: 90%;
-        margin-top: -10px;
+        margin-top: 3px;
+        margin-bottom: -20px;
     }
 
     .pop-up-photos img {
