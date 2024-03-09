@@ -1147,12 +1147,12 @@ form {
         align-items: center;
     }
 
-/*     .pop-up-photos {
+    .pop-up-photos {
         display: flex;
         justify-content: center;
         gap: 1%;
-/*         height: 19px; */
-/*         width: 90%;
+         height: 19px; 
+         width: 90%;
         margin-top: 3px;
         margin-bottom: -20px;
     }
@@ -1167,7 +1167,7 @@ form {
         margin-top: 46px;
         object-fit: cover;
      
-    }  */
+    } 
 
     .date-js {
         font-size: 12px;
