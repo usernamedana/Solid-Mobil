@@ -491,7 +491,7 @@ nav a {
     background-color: rgb(246, 246, 246);
     top: 0;
     left: 15%;
-    z-index: 1;
+    z-index: 1000;
     padding: 1% 0;
     border-radius: 1.5vh;
     border: 5px solid hsl(200, 15%, 43%);
@@ -1147,7 +1147,7 @@ form {
         align-items: center;
     }
 
-    .pop-up-photos {
+/*     .pop-up-photos {
         display: flex;
         justify-content: center;
         gap: 1%;
@@ -1167,7 +1167,7 @@ form {
         margin-top: 46px;
         object-fit: cover;
      
-    }
+    } */
 
     .date-js {
         font-size: 12px;
